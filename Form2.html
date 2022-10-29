@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form2</title>
+  </head>
+  <body>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <div>
+        <p>Name</p>
+        <input
+          tabindex="1"
+          placeholder="User name"
+          type="text"
+          name="user name"
+        />
+        <p>Password</p>
+        <input
+          tabindex="2"
+          placeholder="Password"
+          type="password"
+          name="Password"
+        />
+        <p>Phone</p>
+        <input
+          tabindex="3"
+          placeholder="user phone"
+          type="tel"
+          name="userphone"
+        />
+      </div>
+      <br />
+      <div>
+        <p>Gender</p>
+        <div>
+          <input
+            tabindex="4"
+            checked
+            type="radio"
+            name="gender"
+            value="Male"
+          />Male
+        </div>
+        <div>
+          <input tabindex="4" type="radio" name="gender" value="Female" />Female
+        </div>
+      </div>
+      <br />
+      <div>
+        <p>Something</p>
+        <div>
+          <input
+            tabindex="5"
+            checked
+            type="checkbox"
+            name="Calculator"
+            value="1"
+          />Calculator
+        </div>
+        <div>
+          <input tabindex="6" type="checkbox" name="TV" value="1" />TV set
+        </div>
+        <div>
+          <input
+            tabindex="7"
+            disabled
+            type="checkbox"
+            name="Router"
+            value="1"
+          />Modem
+        </div>
+      </div>
+      <div>
+        <p>Your comment</p>
+        <textarea
+          tabindex="8"
+          placeholder="Write a comment"
+          name="comment"
+          cols="60"
+          rows="7"
+        ></textarea>
+      </div>
+      <div>
+        <p>Upload photo</p>
+        <input tabindex="9" type="file" name="userphoto" />
+      </div>
+      <div>
+        <p>Awesome color</p>
+        <select tabindex="10" name="color">
+          <option value="red">Red</option>
+          <option value="white">White</option>
+          <option value="green">Green</option>
+          <option selected value="black">Black</option>
+        </select>
+      </div>
+      <div>
+        <p>Action</p>
+        <button tabindex="11" type="submit">SEND</button>
+        <button tabindex="12" type="reset">DELETE</button>
+      </div>
+    </form>
+  </body>
+</html>

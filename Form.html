@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <div>
+        <input placeholder="Name" type="text" name="UserName" value="" />
+      </div>
+      <div>
+        <input placeholder="Pass" type="password" name="Password" value="" />
+      </div>
+      <div>
+        <p>
+          <input checked type="radio" name="apple" value="Golden" />
+          Yellow apple in the tree
+        </p>
+        <p>
+          <input type="radio" name="apple" value="Red" />
+          Red apple in the tree
+        </p>
+      </div>
+      <br />
+      <div>
+        <p>
+          <input type="radio" name="flower" value="white" />
+          White flower
+        </p>
+        <p>
+          <input checked type="radio" name="flower" value="blue" />
+          Blue flower
+        </p>
+      </div>
+      <br />
+      <div>
+        <p><input type="checkbox" name="flag" value="country" />Argentina</p>
+        <p><input type="checkbox" name="flag1" value="country" />USA</p>
+        <p><input type="checkbox" name="flag2" value="country" />Zambia</p>
+        <p>
+          <input checked type="checkbox" name="flag3" value="country" />Moldova
+        </p>
+        <p><input type="checkbox" name="flag4" value="country" />Ukraine</p>
+        <p><input type="checkbox" name="flag5" value="country" />Mali</p>
+      </div>
+      <div>
+        <p><input type="file" name="fotos" /></p>
+      </div>
+      <br />
+      <div>
+        <p><textarea placeholder="Some text" name="text"></textarea></p>
+        <p>
+          <textarea
+            disabled
+            placeholder="Example disabled"
+            name="text"
+          ></textarea>
+        </p>
+      </div>
+      <br />
+      <div>
+        <select name="animal">
+          <option value="eatmeat">Wolf</option>
+          <option value="eatmeat">Bear</option>
+          <option selected value="eatmeat">Snake</option>
+          <option value="eatmeat">Eagle</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </div>
+    </form>
+  </body>
+</html>
+
+<!-- 
+    <select> - multiple;
+    <option> - selected;  
+    <button> - type = "submit" and "reset";
+    <input> - placeholder, disabled; 
+ -->
