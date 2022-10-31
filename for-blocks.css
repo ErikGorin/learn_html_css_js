@@ -1,0 +1,127 @@
+/* Обнуление */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/* конец обнуление */
+
+/* CODE */
+
+.example-block {
+  /* padding: 20px 10px 10px 30px; nice work */
+  /* margin: 20px; nice work also with negative value */
+  /* width: 900px; nice work */
+  /* max-width: 400px; nice work */
+  /* min-width: 500px; nice work */
+  /* height: 200px; nice work */
+  /* max-height: 200px; */
+  /* min-height: 200px; both nice work */
+  /* overflow: auto; /* (visible, hidden, scroll) work perfect*/
+  /* display: ;(block-меняет тег на блочный,
+               inline-меняет тег на строчный,
+               inline-block-гибрид между блочным и строчным тегом,
+               none-времено удаляем элемент из документа) work!*/
+  border: 1px solid black;
+  margin-bottom: 30px;
+}
+.example-string {
+  /* padding: 30px; dont work */
+  /* margin: 20px; dont work */
+  /* max-width: 400px; dont work */
+  /* min-width: 500px; dont work */
+  /* height:200px; dont work */
+  /* width: 500px; */
+  /* display: ;(block, inline, inline-block, none ) perfect work*/
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+.example-img {
+  width: 400px;
+  /* margin-top: 15px; */
+  max-width: 400px;
+  margin-top: 30px;
+  padding: 40px;
+  border-radius: 30%;
+  border: 50px;
+  /* min-height: 100px; */
+}
+
+h2 {
+  background-color: blue;
+  color: white;
+  margin-bottom: 10px;
+}
