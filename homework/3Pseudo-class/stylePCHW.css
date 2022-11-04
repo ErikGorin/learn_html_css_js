@@ -1,0 +1,185 @@
+/* Обнуление */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/* конец обнуление */
+
+/* CODE */
+
+body {
+  background-color: rgb(233, 155, 120);
+}
+
+.first-block {
+  margin: 50px;
+}
+.first-list {
+  line-height: 20px;
+}
+
+.first-list li:nth-child(1) {
+  text-decoration: line-through;
+  background: url(./li.svg) left no-repeat;
+  padding: 0 30px;
+}
+.first-list li:nth-child(2) {
+  font-weight: 700;
+  background: url(./li.svg) left no-repeat;
+  padding: 0 30px;
+}
+.first-list li:nth-child(3) {
+  font-style: italic;
+  background: url(./li.svg) left no-repeat;
+  padding: 0 30px;
+}
+.first-list li:nth-child(4) {
+  text-transform: uppercase;
+  background: url(./li.svg) left no-repeat;
+  padding: 0 30px;
+}
+
+.second-block {
+  margin: 50px;
+}
+.second-list {
+  line-height: 20px;
+  font-size: 20px;
+}
+.second-list li:nth-child(1) {
+  background: url(./li.svg) left no-repeat;
+  padding: 0 30px;
+}
+.second-list li:nth-child(2):hover {
+  color: red;
+  background: url(./li.svg) left no-repeat;
+  padding: 0 30px;
+}
+.second-list li:nth-child(3) {
+  background: url(./li.svg) left no-repeat;
+  padding: 0 30px;
+}
+.second-list li:nth-child(4) {
+  background: url(./li.svg) left no-repeat;
+  padding: 0 30px;
+}
+
+.btn-block {
+  margin: 40px;
+}
+.btn-1 {
+  border-radius: 10px;
+  font-weight: 900;
+  background-color: green;
+  padding: 10px;
+  margin: 5px;
+}
+.btn-2 {
+  border-radius: 10px;
+  font-weight: 900;
+  background-color: yellow;
+  padding: 10px;
+  margin: 5px;
+}
+.btn-2:hover {
+  background-color: fuchsia;
+}
+.btn-3 {
+  border-radius: 10px;
+  font-weight: 900;
+  background-color: red;
+  padding: 10px;
+  margin: 5px;
+}
+.btn-3:active {
+  background-color: #fff;
+}
+
+.input-block {
+  margin: 40px;
+}
+.input-1 {
+  padding: 20px;
+  margin: 10px;
+}
+.input-2 {
+  padding: 20px;
+  margin: 10px;
+}
+.input-2:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}

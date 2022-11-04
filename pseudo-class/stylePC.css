@@ -1,0 +1,189 @@
+/* Обнуление */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/* конец обнуление */
+
+/* CODE */
+
+body {
+  padding: 30px;
+}
+/*  PSEUDO CLASS FOR BLOCK */
+/* Если перед или после псевдо класса добавлять другие теги то
+ псевдо класс не будет работать так как у нас уже есть элемент до него либо после него */
+.block p:last-child {
+  font-size: 40px;
+  color: blueviolet;
+}
+.block p:nth-child(odd) {
+  background-color: yellow;
+}
+.block p:nth-child(even) {
+  background-color: rgb(60, 255, 0);
+}
+.block p:last-child:hover {
+  background-color: blue;
+}
+
+.block p {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.link {
+  color: rgb(255, 0, 0);
+}
+
+/*  PSEUDO CLASS FOR LINK */
+.link:hover {
+  text-decoration: underline;
+  color: yellow;
+}
+.link:visited {
+  text-decoration: underline;
+  color: rgba(94, 245, 7, 0.904);
+}
+.link:active {
+  color: rgb(0, 255, 213);
+}
+
+.textinput {
+  border: 1px solid rgb(31, 29, 29);
+  height: 50px;
+  padding: 0px 30px;
+  font-size: 18px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+/*  PSEUDO CLASS FOR INPUT */
+.textinput:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.button {
+  display: block;
+  width: 300px;
+  height: 50px;
+  background-color: #666;
+  font-size: 18px;
+  color: blue;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+/*  PSEUDO CLASS FOR BUTTON */
+.button:hover {
+  color: lawngreen;
+  background-color: blue;
+}
+.button:active {
+  color: rgb(252, 0, 176);
+  background-color: rgb(0, 255, 242);
+}
+.list {
+}
+.list li {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+/*  PSEUDO CLASS FOR LIST */
+/* Первый элемент */
+.list li:first-child {
+  color: aqua;
+}
+/* Последний элемент */
+.list li:last-child {
+  color: salmon;
+  font-size: x-large;
+  font-weight: 700;
+}
+/* Для обращение к конкретному элементу */
+.list li:nth-child(2) {
+  color: seagreen;
+}
+
+/* Обращение к всем не четным */
+.list li:nth-child(odd) {
+  color: rgb(0, 4, 255);
+}
+/* Обращение к всем четным */
+.list li:nth-child(even) {
+  color: rgb(238, 255, 0);
+}
