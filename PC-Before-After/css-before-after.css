@@ -1,0 +1,141 @@
+/* Обнуление */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/* конец обнуление */
+
+/* CODE */
+
+body {
+  padding: 30px;
+  background-color: rgb(173, 169, 169);
+}
+
+.text {
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+/* Pseudo class only first line and first letter */
+.text::first-line {
+  color: blue;
+}
+.text::first-letter {
+  color: tomato;
+  font-size: 50px;
+}
+
+.list {
+}
+.list li {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+/* Pseudo element BEFORE, it must include "contant"!
+ and can use before main element */
+
+.list li::before {
+  /* content: "<< "; */
+  content: " ";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(243, 200, 8);
+  display: inline-block;
+  margin-right: 10px;
+}
+/* Pseudo element AFTER, it must include "contant"!
+ and can use after main element */
+.list li:after {
+  /* content: " >>"; */
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(6, 218, 255);
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.list li:hover:before {
+  background-color: rgba(24, 235, 5, 0.664);
+}
+.list li:hover:after {
+  background-color: rgba(149, 10, 161, 0.815);
+}
